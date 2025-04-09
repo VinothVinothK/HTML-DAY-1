@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/contact.png" type="image/x-icon" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+    <hr />
+    <main>
+      <form>
+        <fieldset>
+          <legend>
+            <strong><mark>Personal info</mark></strong>
+          </legend>
+          <p>
+            <label for="first">First Name</label>
+            <input
+              type="text"
+              name="first"
+              id="first"
+              placeholder="Enter your first name"
+              required
+            />
+          </p>
+          <p>
+            <label for="last">Last Name</label>
+            <input
+              type="text"
+              name="last"
+              id="last"
+              placeholder="Enter your last name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email id"
+            />
+          </p>
+          <p>
+            <label for="phone">Phone No</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone no"
+            />
+          </p>
+          <p>
+            <label for="age">age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age"
+            />
+          </p>
+          <p>
+            <label for="dob">Date of birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Enter your dob"
+            />
+          </p>
+          <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">female</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <strong><mark>Favorite foods</mark></strong>
+          </legend>
+
+          <p>
+            <label for="food">favolite dish</label>
+            <select name="food" id="food">
+              <optgroup label="Tiffin">
+                <option value="idly">idly</option>
+                <option value="dosa">dosa</option>
+                <option value="vada">vada</option>
+                <option value="pongal">pongal</option>
+              </optgroup>
+              <optgroup label="Lunch">
+                <option value="rice">rice</option>
+                <option value="crice">crice</option>
+                <option value="trice">trice</option>
+                <option value="lrice">lrice</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <strong><mark>Favorite Sports</mark></strong>
+          </legend>
+          <p>
+            <label for="sport">favorite game</label>
+            <input
+              type="text"
+              name="sport"
+              id="sport"
+              placeholder="Enter your favorite sport"
+              list="sprot-list"
+            />
+            <datalist id="sprot-list">
+              <option value="cricket"></option>
+              <option value="volley ball"></option>
+              <option value="Tennis"></option>
+            </datalist>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <strong><mark>Skills</mark></strong>
+          </legend>
+          <p>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skills" id="html" value="HTML" />
+          </p>
+          <p>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="css" value="CSS" />
+          </p>
+          <p>
+            <label for="js">JS</label>
+            <input type="checkbox" name="skills" id="js" value="JS" />
+          </p>
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <marquee>
+        &lt;&lt;&lt;&lt;&lt;&lt;<mark><strong>&copy;Vinoth</strong></mark
+        >&gt;&gt;&gt;&gt;&gt;&gt;
+      </marquee>
+    </footer>
+    <a href="#" target="_top"><button>Go Top</button></a>
+  </body>
+</html>
